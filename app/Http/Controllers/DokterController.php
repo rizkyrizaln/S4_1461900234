@@ -67,6 +67,7 @@ class DokterController extends Controller
         return view('edit_0234', ['dokter' => $dokter]);
     }
 
+    
     public function update(Request $request)
     {
         Db::table('dokter')->where('id', $request->id)->update([
